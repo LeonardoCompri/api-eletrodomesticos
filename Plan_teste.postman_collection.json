@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "fdff6f1d-3670-4dc0-9a16-da68d7298704",
+		"name": "Plan_teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List appliances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/api/appliances",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"appliances"
+					]
+				},
+				"description": "Listagem dos eletrodomesticos com paginação"
+			},
+			"response": []
+		},
+		{
+			"name": "Store appliance",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Teste 2\",\n    \"voltage\": 110,\n    \"brand_id\": 2,\n    \"description\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8001/api/appliance/store",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"appliance",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get to edit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/api/appliance/2/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"appliance",
+						"2",
+						"edit"
+					]
+				},
+				"description": "Pega os dados de um eletrodomestico para fazer a edição"
+			},
+			"response": []
+		},
+		{
+			"name": "Update appliance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Televisão LCD\",\n    \"voltage\": 110,\n    \"brand_id\": 2,\n    \"description\": \"Muito bom\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8001/api/appliance/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"appliance",
+						"2"
+					]
+				},
+				"description": "Atualizar o eletrodomestico"
+			},
+			"response": []
+		},
+		{
+			"name": "Destroy appliance",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/api/appliance/9/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"appliance",
+						"9",
+						"delete"
+					]
+				},
+				"description": "Apaga o registro do eletrodomestico"
+			},
+			"response": []
+		}
+	]
+}

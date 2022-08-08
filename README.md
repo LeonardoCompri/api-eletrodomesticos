@@ -30,8 +30,8 @@ Pronto!
 
 # Rotas da API
 
-<u> List appliances </u>
-<u> GET </u>
+<u> List appliances </u> <br/>
+<u> GET </u> <br/>
 Listagem com paginação dos eletrodomésticos;
 
 <i> http://localhost:8001/api/appliances </i>
@@ -146,8 +146,8 @@ Resposta:
 
 -----------------------------------------------------
 
-<u> Store appliance </u>
-<u> POST </u>
+<u> Store appliance </u> <br/>
+<u> POST </u> <br/>
 Inserção de novo eletrodomésticos;
 
 <i> http://localhost:8001/api/appliance/store </i>
@@ -171,8 +171,8 @@ Resposta:
 
 -----------------------------------------------------
 
-<u> Get appliance </u>
-<u> GET </u>
+<u> Get appliance </u> <br/>
+<u> GET </u> <br/>
 Dados de eletrodoméstico;
 
 <i> http://localhost:8001/api/appliance/2/edit </i>
@@ -227,8 +227,8 @@ Resposta:
 
 -----------------------------------------------------
 
-<u> Update appliance </u>
-<u> PUT </u>
+<u> Update appliance </u> <br/>
+<u> PUT </u> <br/>
 Atualizar o eletrodoméstico;
 
 <i> http://localhost:8001/api/appliance/2 </i>
@@ -252,8 +252,8 @@ Resposta:
 
 -----------------------------------------------------
 
-<u> Delete appliance </u>
-<u> DELETE </u>
+<u> Delete appliance </u> <br/>
+<u> DELETE </u> <br/>
 Apagar o eletrodoméstico;
 
 <i> http://localhost:8001/api/appliance/2/delete </i>

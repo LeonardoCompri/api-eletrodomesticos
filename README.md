@@ -9,22 +9,22 @@ Também foi feita algumas páginas com Blade que também possibilita a utilizaç
 Foi utilizado o Sail para rodar a aplicação em Laravel, então verifique se as portas 3306 e 8001 estão livres para ser possivel subir o banco de dados MySQL e a aplicação em Laravel.
 
 Abra o terminal e acesse a pasta 'api_laravel' e rode o comando:
-# alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+<b> alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' </b>
 
 Com essa linha será mais fácil para fazer os comandos do Sail utilizando apenas a palavra 'sail' ao invês de utilizar o caminho inteiro do arquivo.
 
 No repositório foi incluido o arquivo '.env' já com as configurações certas para subir o projeto
 
 Então execute o comando, para subir a aplicação:
-# sail up -d
+<b> sail up -d </b>
 
 Após subir o projeto faça a migração do banco com alguns dados, com o comando:
-# sail artisan migrate --seed
+<b> sail artisan migrate --seed </b>
 
 Assim o banco será criado e já será inserido alguns eletrodomésticos e as marcas e você já pode utilizar a aplicação.
 
 Acesse:
-# http://localhost:8001
+<b> http://localhost:8001 </b>
 
 Pronto! 
 

@@ -18,7 +18,8 @@
     </head>
     <body>
         <div class="container">
-            <h1>Defualt</h1>
+            <h1 class="mb-3">API</h1>
+
             @yield('content')
         </div>
     </body>
